@@ -1,0 +1,14 @@
+html {font: normal 90% Verdana, sans-serif;}
+
+
+
+div#page-type {font-size:30px;text-align:center;font-weight:bold;width:100%;padding-bottom:20px;}
+div#page-info {width:100%;padding-bottom:20px;}
+
+span.info-key { float:left; color: #FF0000; margin-right:8px; }
+span.info-value { float:left; margin-right:30px; }
+
+div#container {width:100%;}
+div#left-space {float:left; width:20%; height:100%;}
+div#right-space {float:left; width:20%;}
+div#content {float:left; width:60%;}
