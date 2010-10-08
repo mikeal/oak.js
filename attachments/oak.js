@@ -26,6 +26,7 @@ var app = {};
 
 app.index = function () {
   $('div#upcoming-event')
+  
 }
 
 var a = $.sammy(function () {
