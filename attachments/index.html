@@ -5,22 +5,32 @@
     <title>oak.js -- Oakland JavaScript Meetup</title>
     <link href="/layout.css" rel="stylesheet" type="text/css" />
     <script language="javascript" type="text/javascript" src="jquery-1.4.2.min.js"></script>
+    <script language="javascript" type="text/javascript" src="jquery.corner.js"></script>
     <script language="javascript" type="text/javascript" src="sammy/sammy.js"></script>
     <script language="javascript" type="text/javascript" src="sammy/plugins/sammy.mustache.js"></script>
+    <script language="javascript" type="text/javascript" src="md5.js"></script>
     <script language="javascript" type="text/javascript" src="oak.js"></script>
   </head>
   
   <body>
+    <div class="main-title">Oakland JavaScript Meetup</div>
     <div id="container">
       <div id="left-space">&nbsp</div>
       <div id="content">
-        <h2 class="main-title">oak.js</h2>
-        <div id="upcoming-event"> </div>
-        <div id="rsvp"> 
-          <input type="text" name="name" /><br/>
-          <input type="text" name="email" /><br/>
-          <div id="rsvp-button">RSVP!</div>
+        <div id="event">
+          <div id="upcoming-event"> </div>
         </div>
+        <div id="rsvp"> 
+          <div class="rsvp-input">
+              <span class="rsvp-name">name</span><input class="rsvp" type="text" name="name" />
+          </div>
+          <div class="rsvp-input">
+            <span class="rsvp-name">email</span><input class="rsvp" type="text" name="email" />
+          </div>
+          <div><span class="rsvp-button-container"><span id="rsvp-button">RSVP!</span></span></div>
+        </div>
+        <div class="attendee-header">Attendee List</div>
+        <div id="attendees"></div>
       </div>
       <div id="right-space">&nbsp</div>
     </div>

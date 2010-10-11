@@ -1,16 +1,32 @@
 html {font: normal 90% Verdana, sans-serif;}
 
-h2.main-title {font-size:45px;text-align:center;}
-
-div#page-type {font-size:30px;text-align:center;font-weight:bold;width:100%;padding-bottom:20px;}
-div#page-info {width:100%;padding-bottom:20px;}
-
-span.info-key { float:left; color: #FF0000; margin-right:8px; }
-span.info-value { float:left; margin-right:30px; }
+div.main-title {font-size:43px;text-align:center; padding-bottom:15px;}
 
 div#container {width:100%;}
-div#left-space {float:left; width:20%; height:100%;}
+div#left-space {float:left; width:20%;}
 div#right-space {float:left; width:20%;}
-div#content {float:left; width:60%;}
+div#content {float:left; width:60%; padding-bottom:20px;}
 
-div#rsvp {text-align:center;}
+div#rsvp {text-align:center; font-size:30px; padding-top:30px;}
+
+div.event-title {width:100%; font-size:30px; text-align:center; padding-bottom:10px;}
+div.event-item {width:100%; padding-bottom:12px;}
+div.event-time {width:16%; float:left; padding-bottom:12px; padding-right:4%; text-align:right; font-weight:bold;}
+div.event-break-title {width:80%; float:left; padding-bottom:12px;}
+div.event-talk-title {width:60%; float:left; padding-bottom:12px;}
+div.event-talk-pic {width:20%; float:left; padding-bottom:12px;}
+
+div.rsvp-input {padding-top:10px; padding-bottom:10px;}
+span.rsvp-name {padding-right:20px; font-weight:bold;}
+input.rsvp {width:80%; font-size:28px; text-align:center; }
+span.rsvp-button-container {}
+span#rsvp-button { font-weight:bold; cursor:pointer; background-color:#AAAAAA; padding-left:5px; padding-right:5px; font-size:28px;}
+
+div.attendee {width:100%;}
+div.attendee-name { width:62%; float:left; font-size:30px; padding-top:2px;
+                    text-align:right; padding-right:3%; vertical-align:middle;
+                    padding-bottom:5px;
+                  }
+div.attendee-pic {width:35%; float:left; padding-bottom:5px;}
+
+.attendee-header {padding-top:35px; padding-bottom:35px; text-align:center; font-size:40px;}
