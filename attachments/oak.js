@@ -12,18 +12,21 @@ var request = function (options, callback) {
 }
 
 var isaacsPicture = 'http://www.gravatar.com/avatar/73a2b24daecb976af81e010b7a3ce3c6?s=140';
-var mikealPicture = 'http://www.gravatar.com/avatar/a6b7cf03b0631c6fe3b432fa1d015524?s=140';
+var aaronPicture = 'http://www.gravatar.com/avatar/f04bfa14141dca6713f0d9caa763e26b?s=140';
 
-var isaacsDescription = "Async Programming in node.js - Isaac Shlueter <br><br>";
-isaacsDescription += 'Async isn\'t hard and you don\'t need promises. issacs, author of <a href="http://npmjs.org/">npm</a>, will explain.'
+var isaacsDescription = "Async Programming in node.js - Isaac Schlueter <br><br>";
+isaacsDescription += 'Async isn\'t hard and you don\'t need promises. isaacs, author of <a href="http://npmjs.org/">npm</a>, will explain.'
+var aaronsDescription = 'Holy crap! I am so frickin pumped about client side js right now - Aaron Quint<br><br>It\'s an amazing time to be a javascript developer. aq, author of <a href="http://code.quirkey.com/sammy/">sammy.js</a> will walk through the finer points of sammy, couchdb, and making 100% client side apps.'
 
 var meetup = {
-    date: "Wednesday October 20th"
+    date: "Wednesday October 27th"
+  , location: 'CouchOne'
+  , locationLink: 'http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=825+Washington+Street+Suite+201,+Oakland,+CA&sll=37.801629,-122.274742&sspn=0.009054,0.014677&ie=UTF8&hq=&hnear=825+Washington+St+%23201,+Oakland,+Alameda,+California+94607&ll=37.801104,-122.274742&spn=0.009054,0.014677&z=16'
   , schedule: [
         ['6pm', 'require("social")']
       , ['7pm', isaacsDescription, isaacsPicture]
       , ['7:30pm', 'require("food")']
-      , ['8pm', 'Another Person', mikealPicture]
+      , ['8pm', aaronsDescription, aaronPicture]
     ]
 }
 
@@ -40,7 +43,7 @@ var getAttendeeHtml = function (doc) {
 var app = {};
 
 app.index = function () {
-  var text = '<div class="event-title">'+meetup.date+'</div>';
+  var text = '<div class="event-title">'+meetup.date+' @ '+'<a href="'+meetup.locationLink+'">'+meetup.location+'</a></div>';
   for (var i=0;i<meetup.schedule.length;i++) {
     if (meetup.schedule[i].length === 2) {
       text += '<div class="event-item">'
@@ -54,6 +57,7 @@ app.index = function () {
       text +=   '<div class="event-talk-pic"><img class="speaker" src="'+meetup.schedule[i][2]+'" /></div>'
       text += '</div>'
     }
+    text += '<div class="spacer">'
   }
   $('div#upcoming-event').append($(text))
   $('img.speaker').corner();
@@ -67,7 +71,7 @@ app.index = function () {
     request({type:'POST', url:'/api', data: JSON.stringify(data)}, function (err, obj) {
       if (obj.id) {
         $("div#rsvp").remove();
-        $("div#attendees").prepend($(getAttendeeHtml(data)));
+        $("div#attendees").append($(getAttendeeHtml(data)));
         $("img.attendee-pic").corner();
       }
     })
@@ -85,6 +89,7 @@ app.index = function () {
       ));
     })
     $("img.attendee-pic").corner();
+    $("div#attendees").append($('<div class="spacer">&nbsp</div>'))
   })
 }
 

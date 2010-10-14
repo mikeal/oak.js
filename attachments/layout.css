@@ -1,6 +1,45 @@
-html {font: normal 90% Verdana, sans-serif;}
+html {font: normal 110% OFL Sorts Mill GoudyRegular; color:#292929;}
 
-div.main-title {font-size:43px;text-align:center; padding-bottom:15px;}
+@font-face {
+  /* unlinked */
+  font-family: "Stratounlinked";
+  src: url("http://openfontlibrary.org/content/BSozoo/168/Strato-unlinked.ttf") format("truetype");
+  font-weight:  400;
+  font-style:   normal;
+  font-variant: normal;
+  font-stretch: normal;
+}
+@font-face {
+  /* Regular */
+  font-family: "HerbifloraRegular";
+  src: url("http://openfontlibrary.org/content/ahyangyi/88/Herbiflora.ttf") format("truetype");
+  font-weight:  400;
+  font-style:   normal;
+  font-variant: normal;
+  font-stretch: normal;
+}
+@font-face {
+  /* Regular */
+  font-family: "OFL Sorts Mill GoudyRegular";
+  src: url("http://openfontlibrary.org/content/chemoelectric/154/OFLGoudyStM.otf") format("opentype");
+  font-weight:  400;
+  font-style:   normal;
+  font-variant: normal;
+  font-stretch: normal;
+}
+@font-face {
+  /* Normal */
+  font-family: "PuritanNormal";
+  src: url("http://openfontlibrary.org/content/benweiner/259/Puritan2.otf") format("opentype");
+  font-weight:  400;
+  font-style:   normal;
+  font-variant: normal;
+  font-stretch: normal;
+}
+
+a {text-decoration:none; color:#0276FD;}
+
+div.main-title {font-size:43px;text-align:center; padding-bottom:10px;font-family:Stratounlinked;color:#383838;}
 
 div#container {width:100%;}
 div#left-space {float:left; width:20%;}
@@ -9,19 +48,19 @@ div#content {float:left; width:60%; padding-bottom:20px;}
 
 div#rsvp {text-align:center; font-size:30px; padding-top:30px;}
 
-div.event-title {width:100%; font-size:30px; text-align:center; padding-bottom:10px;}
+div.event-title {width:100%; font-size:30px; text-align:center; padding-bottom:15px;font-family:HerbifloraRegular;}
 div.event-item {width:100%; padding-bottom:12px;}
 div.event-time {width:16%; float:left; padding-bottom:12px; padding-right:4%; text-align:right; font-weight:bold;}
 div.event-break-title {width:80%; float:left; padding-bottom:12px;}
 div.event-talk-title {width:60%; float:left; padding-bottom:12px;}
-div.event-talk-pic {width:20%; float:left; padding-bottom:12px;}
+div.event-talk-pic {width:18%; float:left; padding-bottom:12px; padding-left:2%;}
 
 div.rsvp-input {padding-top:10px; padding-bottom:10px;}
 span.rsvp-name {padding-right:20px; font-weight:bold;}
 input.rsvp {width:80%; font-size:28px; text-align:center; }
 span.rsvp-button-container {}
-span#rsvp-button { font-weight:bold; cursor:pointer; background-color:#AAAAAA; padding-left:5px; padding-right:5px; font-size:28px;}
-
+span#rsvp-button { font-weight:bold; cursor:pointer; background-color:#AAAAAA; padding-left:7px; padding-right:5px; font-size:25px;padding-top:5px;}
+div.spacer {clear:both;}
 div.attendee {width:100%;}
 div.attendee-name { width:62%; float:left; font-size:30px; padding-top:2px;
                     text-align:right; padding-right:3%; vertical-align:middle;
