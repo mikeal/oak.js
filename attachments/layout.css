@@ -1,9 +1,9 @@
-html {font: normal 110% OFL Sorts Mill GoudyRegular; color:#292929;}
+html {font: normal 110% OFL Sorts Mill GoudyRegular;}
 
 @font-face {
   /* unlinked */
   font-family: "Stratounlinked";
-  src: url("http://openfontlibrary.org/content/BSozoo/168/Strato-unlinked.ttf") format("truetype");
+  src: url("/fonts/Strato-unlinked.ttf") format("truetype");
   font-weight:  400;
   font-style:   normal;
   font-variant: normal;
@@ -12,7 +12,7 @@ html {font: normal 110% OFL Sorts Mill GoudyRegular; color:#292929;}
 @font-face {
   /* Regular */
   font-family: "HerbifloraRegular";
-  src: url("http://openfontlibrary.org/content/ahyangyi/88/Herbiflora.ttf") format("truetype");
+  src: url("/fonts/Herbiflora.ttf") format("truetype");
   font-weight:  400;
   font-style:   normal;
   font-variant: normal;
@@ -21,7 +21,7 @@ html {font: normal 110% OFL Sorts Mill GoudyRegular; color:#292929;}
 @font-face {
   /* Regular */
   font-family: "OFL Sorts Mill GoudyRegular";
-  src: url("http://openfontlibrary.org/content/chemoelectric/154/OFLGoudyStM.otf") format("opentype");
+  src: url("/fonts/OFLGoudyStM.otf") format("opentype");
   font-weight:  400;
   font-style:   normal;
   font-variant: normal;
@@ -30,14 +30,26 @@ html {font: normal 110% OFL Sorts Mill GoudyRegular; color:#292929;}
 @font-face {
   /* Normal */
   font-family: "PuritanNormal";
-  src: url("http://openfontlibrary.org/content/benweiner/259/Puritan2.otf") format("opentype");
+  src: url("/fonts/Puritan2.otf") format("opentype");
+  font-weight:  400;
+  font-style:   normal;
+  font-variant: normal;
+  font-stretch: normal;
+}
+@font-face {
+  /* Normal */
+  font-family: "Chunkfive";
+  src: url("/fonts/Chunkfive-webfont.ttf") format("truetype");
   font-weight:  400;
   font-style:   normal;
   font-variant: normal;
   font-stretch: normal;
 }
 
+
 a {text-decoration:none; color:#0276FD;}
+
+body {background: url(http://static.izs.me/oakland-tree-800.png) center 100px no-repeat}
 
 div.main-title {font-size:43px;text-align:center; padding-bottom:10px;font-family:Stratounlinked;color:#383838;}
 
@@ -69,3 +81,6 @@ div.attendee-name { width:62%; float:left; font-size:30px; padding-top:2px;
 div.attendee-pic {width:35%; float:left; padding-bottom:5px;}
 
 .attendee-header {padding-top:35px; padding-bottom:35px; text-align:center; font-size:40px;}
+
+div.sponsor-header {width:100%;text-align:center; font-size:40px; padding-top:40px; padding-bottom:20px;}
+div.sponsor-couchone {text-align:center; font-family: Chunkfive; font-size:55px;}
