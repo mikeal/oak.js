@@ -45,7 +45,12 @@
   font-variant: normal;
   font-stretch: normal;
 }
-
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: normal;
+  src: url('http://themes.googleusercontent.com/font?kit=7bMKuoy6Nh0ft0SHnIGMuaCWcynf_cDxXwCLxiixG1c') format('truetype');
+}
 
 a {text-decoration:none; color:#0276FD;}
 
@@ -64,6 +69,7 @@ div.event-title {width:100%; font-size:30px; text-align:center; padding-bottom:1
 div.event-item {width:100%; padding-bottom:12px;}
 div.event-time {width:16%; float:left; padding-bottom:12px; padding-right:4%; text-align:right; font-weight:bold;}
 div.event-break-title {width:80%; float:left; padding-bottom:12px;}
+span.code {font-family: Inconsolata;}
 div.event-talk-title {width:60%; float:left; padding-bottom:12px;}
 div.event-talk-pic {width:18%; float:left; padding-bottom:12px; padding-left:2%;}
 img.speaker {-moz-border-radius: 15px; border-radius: 15px;}

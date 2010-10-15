@@ -48,7 +48,7 @@ app.index = function () {
     if (meetup.schedule[i].length === 2) {
       text += '<div class="event-item">'
       text +=   '<div class="event-time">'+meetup.schedule[i][0]+'</div>'
-      text +=   '<div class="event-break-title">'+meetup.schedule[i][1]+'</div>'
+      text +=   '<div class="event-break-title"><span class="code">'+meetup.schedule[i][1]+'</span></div>'
       text += '</div>'
     } else {
       text += '<div class="event-item">'
