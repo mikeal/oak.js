@@ -1,9 +1,9 @@
-html {font: normal 110% OFL Sorts Mill GoudyRegular;}
+  html {font: normal 110% OFL Sorts Mill GoudyRegular;}
 
 @font-face {
   /* unlinked */
   font-family: "Stratounlinked";
-  src: url("/fonts/Strato-unlinked.ttf") format("truetype");
+  src: url("http://openfontlibrary.org/content/BSozoo/168/Strato-unlinked.ttf") format("truetype");
   font-weight:  400;
   font-style:   normal;
   font-variant: normal;
@@ -12,7 +12,7 @@ html {font: normal 110% OFL Sorts Mill GoudyRegular;}
 @font-face {
   /* Regular */
   font-family: "HerbifloraRegular";
-  src: url("/fonts/Herbiflora.ttf") format("truetype");
+  src: url("http://openfontlibrary.org/content/ahyangyi/88/Herbiflora.ttf") format("truetype");
   font-weight:  400;
   font-style:   normal;
   font-variant: normal;
@@ -21,7 +21,7 @@ html {font: normal 110% OFL Sorts Mill GoudyRegular;}
 @font-face {
   /* Regular */
   font-family: "OFL Sorts Mill GoudyRegular";
-  src: url("/fonts/OFLGoudyStM.otf") format("opentype");
+  src: url('http://themes.googleusercontent.com/font?kit=9ZZVVBRCceNnPBXqWLH8IBeHOylGMxdcwbe4vXI079w') format('truetype');
   font-weight:  400;
   font-style:   normal;
   font-variant: normal;
@@ -30,7 +30,7 @@ html {font: normal 110% OFL Sorts Mill GoudyRegular;}
 @font-face {
   /* Normal */
   font-family: "PuritanNormal";
-  src: url("/fonts/Puritan2.otf") format("opentype");
+  src: url("http://openfontlibrary.org/content/benweiner/259/Puritan2.otf") format("opentype");
   font-weight:  400;
   font-style:   normal;
   font-variant: normal;
@@ -82,5 +82,5 @@ div.attendee-pic {width:35%; float:left; padding-bottom:5px;}
 
 .attendee-header {padding-top:35px; padding-bottom:35px; text-align:center; font-size:40px;}
 
-div.sponsor-header {width:100%;text-align:center; font-size:40px; padding-top:40px; padding-bottom:20px;}
+div.sponsor-header {width:100%;text-align:center; font-size:40px; padding-top:55px; padding-bottom:20px;}
 div.sponsor-couchone {text-align:center; font-family: Chunkfive; font-size:55px;}
