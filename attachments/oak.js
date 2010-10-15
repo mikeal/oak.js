@@ -79,7 +79,7 @@ app.index = function () {
       function () {$(this).css("background-color", "#AAAAAA")}
   )
   ;
-  console.log('asdfasdfasdfasdf')
+  
   request({url:'/_view/rsvp?'+$.param({key: JSON.stringify(meetup.date), include_docs:'true'})}, function (err, resp) {
     resp.rows.forEach( function (row) {
       $("div#attendees").append($(
