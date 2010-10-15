@@ -60,9 +60,8 @@ app.index = function () {
     text += '<div class="spacer">'
   }
   $('div#upcoming-event').append($(text))
-  $('img.speaker').corner();
-  $('span#rsvp-button').corner()
-  .click(function () {
+  
+  $('span#rsvp-button').click(function () {
     var data = {  email: $("input[name=email]").val()
                 , name: $("input[name=name]").val()
                 , type: 'rsvp'
@@ -72,7 +71,6 @@ app.index = function () {
       if (obj.id) {
         $("div#rsvp").remove();
         $("div#attendees").append($(getAttendeeHtml(data)));
-        $("img.attendee-pic").corner();
       }
     })
   })
@@ -81,14 +79,13 @@ app.index = function () {
       function () {$(this).css("background-color", "#AAAAAA")}
   )
   ;
-  
+  console.log('asdfasdfasdfasdf')
   request({url:'/_view/rsvp?'+$.param({key: JSON.stringify(meetup.date), include_docs:'true'})}, function (err, resp) {
     resp.rows.forEach( function (row) {
       $("div#attendees").append($(
         getAttendeeHtml(row.doc)
       ));
     })
-    $("img.attendee-pic").corner();
     $("div#attendees").append($('<div class="spacer">&nbsp</div>'))
   })
 }
