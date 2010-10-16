@@ -91,5 +91,8 @@ img.attendee-pic {-moz-border-radius: 15px; border-radius: 15px;}
 
 .attendee-header {padding-top:35px; padding-bottom:35px; text-align:center; font-size:40px;}
 
-div.sponsor-header {width:100%;text-align:center; font-size:40px; padding-top:55px; padding-bottom:20px;}
-div.sponsor-couchone {text-align:center; font-family: Chunkfive; font-size:55px;}
+div.sponsor-header {width:100%;text-align:center; font-size:40px; padding-top:55px; padding-bottom:10px;}
+div.sponsor-couchone {text-align:center; font-family: Chunkfive; padding-top:15px; font-size:55px; float:left; width:50%;}
+div.sponsor-sauce {text-align:center; float:left; width:50%;}
+img.sponsor-sauce { vertical-align:absmiddle;}
+
