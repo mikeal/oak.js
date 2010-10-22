@@ -58,10 +58,10 @@ body {background: url(http://static.izs.me/oakland-tree-800.png) center 100px no
 
 div.main-title {font-size:43px;text-align:center; padding-bottom:10px;font-family:Stratounlinked;color:#383838;}
 
-div#container {width:100%;}
-div#left-space {float:left; width:20%;}
-div#right-space {float:left; width:20%;}
-div#content {float:left; width:60%; padding-bottom:20px;}
+div.container {width:100%;}
+div.left-space {float:left; width:20%;}
+div.right-space {float:left; width:20%;}
+div.content {float:left; width:60%; padding-bottom:20px;}
 
 div#rsvp {text-align:center; font-size:30px; padding-top:30px;}
 
@@ -81,7 +81,7 @@ input.rsvp {width:80%; font-size:28px; text-align:center; }
 span.rsvp-button-container {}
 span#rsvp-button { font-weight:bold; cursor:pointer; background-color:#AAAAAA; padding-left:7px; padding-right:5px; font-size:25px;padding-top:5px;-moz-border-radius: 15px; border-radius: 15px;}
 div.spacer {clear:both;}
-div.attendee {width:100%;}
+/*div.attendee {width:100%;}*/
 div.attendee-name { width:62%; float:left; font-size:30px; padding-top:2px;
                     text-align:right; padding-right:3%; vertical-align:middle;
                     padding-bottom:5px;
@@ -91,8 +91,10 @@ img.attendee-pic {-moz-border-radius: 15px; border-radius: 15px;}
 
 .attendee-header {padding-top:35px; padding-bottom:35px; text-align:center; font-size:40px;}
 
-div.sponsor-header {width:100%;text-align:center; font-size:40px; padding-top:55px; padding-bottom:10px;}
-div.sponsor-couchone {text-align:center; font-family: Chunkfive; padding-top:15px; font-size:55px; float:left; width:50%;}
-div.sponsor-sauce {text-align:center; float:left; width:50%;}
+div.sponsor-header {width:100%; text-align:center; font-size:40px; padding-top:55px; padding-bottom:10px;}
+div.sponsor-couchone {text-align:center; font-family: Chunkfive; padding-top:15px; font-size:55px; float:left; width:33.3%;}
+div.sponsor-sauce {text-align:center; float:left;  width:32.8%; padding-left:.5%;}
+div.sponsor-joyent {text-align:center; float:left; width:33.3%; padding-top:10px;}
+
 img.sponsor-sauce { vertical-align:absmiddle;}
 
